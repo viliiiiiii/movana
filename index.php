@@ -115,7 +115,7 @@
     <div class="flex items-center">
       <!-- SVG Logo -->
      <!-- If you prefer using the SVG as an image file -->
-      <img src="movanalogo.svg" alt="Movana" class="h-8 w-8"> 
+      <img src="/assets/movanalogo.svg" alt="Movana" class="h-8 w-8"> 
       <span class="ml-2 text-xl font-semibold">Movana</span>
     </div>
     <nav class="hidden md:flex space-x-8">
