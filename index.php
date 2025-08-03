@@ -3,65 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movana | Smart Web App Builder</title>
+  <title>Movana | Web App Builder</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Inter', sans-serif; }
-    .logo-icon path {
-      fill: none;
-      stroke: #4f46e5;
-      stroke-width: 2;
-    }
+    body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
   </style>
 </head>
 <body class="bg-white text-gray-800">
   <!-- Navigation -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
+  <header class="bg-white shadow-sm sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="flex items-center space-x-2">
-        <svg class="w-8 h-8 logo-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2 8l20 10 10-4 12 8 18-2-14 10-10 4-4 10-12-2-4-8z" />
-        </svg>
-        <h1 class="text-2xl font-bold text-indigo-600">Movana</h1>
-      </div>
+      <h1 class="text-2xl font-bold text-indigo-600">Movana</h1>
       <nav class="hidden md:flex space-x-6 text-sm font-medium">
-        <a href="#features" class="hover:text-indigo-600">Features</a>
-        <a href="#how" class="hover:text-indigo-600">How It Works</a>
-        <a href="#contact" class="hover:text-indigo-600">Contact</a>
+        <a href="#features" class="hover:text-indigo-600 transition">Features</a>
+        <a href="#how" class="hover:text-indigo-600 transition">How It Works</a>
+        <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
       </nav>
       <a href="#contact" class="md:hidden inline-block bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-semibold">Start</a>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="relative overflow-hidden py-24 bg-gradient-to-r from-indigo-600 to-indigo-400 text-white">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-5xl font-bold leading-tight mb-6">Build Your Dream App – Without the Code</h2>
-      <p class="text-lg mb-8">Movana crafts custom web applications based on your unique idea and preferences. Designed for entrepreneurs, tailored for speed.</p>
-      <a href="#contact" class="bg-white text-indigo-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Get Started</a>
+  <section class="relative py-28 bg-gradient-to-br from-indigo-600 to-blue-500 text-white text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-5xl font-bold mb-4 leading-tight">Web Apps Made Simple</h2>
+      <p class="text-lg mb-8 max-w-2xl mx-auto">Design and launch custom-built web applications with Movana — no bloat, no templates, just exactly what you need.</p>
+      <a href="#contact" class="inline-block bg-white text-indigo-700 px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition">Start Now</a>
     </div>
   </section>
 
   <!-- Features -->
   <section id="features" class="py-20 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
-      <div class="text-center">
-        <div class="text-indigo-600 text-4xl mb-4">⚙️</div>
-        <h3 class="text-xl font-semibold mb-2">Tailored Development</h3>
-        <p>We translate your idea into a precise, fully functional web application. No templates, just your logic.</p>
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="bg-white rounded-xl p-6 shadow-sm text-center hover:shadow-md transition">
+        <div class="text-indigo-600 text-4xl mb-4">🛠️</div>
+        <h3 class="text-xl font-semibold mb-2">Custom Development</h3>
+        <p>We build your app from scratch — fully aligned to your goals, not pre-made components.</p>
       </div>
-      <div class="text-center">
-        <div class="text-indigo-600 text-4xl mb-4">🧠</div>
-        <h3 class="text-xl font-semibold mb-2">AI-Assisted Planning</h3>
-        <p>Movana suggests features and layout that best suit your audience, market, and goals.</p>
+      <div class="bg-white rounded-xl p-6 shadow-sm text-center hover:shadow-md transition">
+        <div class="text-indigo-600 text-4xl mb-4">📱</div>
+        <h3 class="text-xl font-semibold mb-2">Responsive by Default</h3>
+        <p>Your web app will look great on all devices and load fast wherever your users are.</p>
       </div>
-      <div class="text-center">
-        <div class="text-indigo-600 text-4xl mb-4">🚀</div>
-        <h3 class="text-xl font-semibold mb-2">Fast Deployment</h3>
-        <p>Your custom app is delivered to production-ready infrastructure with support included.</p>
+      <div class="bg-white rounded-xl p-6 shadow-sm text-center hover:shadow-md transition">
+        <div class="text-indigo-600 text-4xl mb-4">🔒</div>
+        <h3 class="text-xl font-semibold mb-2">Secure & Reliable</h3>
+        <p>Deployed on hardened infrastructure with clean, production-ready code and ongoing support.</p>
       </div>
     </div>
   </section>
@@ -70,18 +58,21 @@
   <section id="how" class="py-20 bg-white border-t border-gray-100">
     <div class="max-w-4xl mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
-      <div class="space-y-10">
-        <div>
-          <h4 class="text-xl font-semibold">1. Share Your Vision</h4>
-          <p class="text-gray-600">Fill out a short form with your idea, target audience, and desired features.</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="text-indigo-600 text-3xl mb-2">📝</div>
+          <h4 class="text-lg font-semibold mb-1">Step 1: Tell Us</h4>
+          <p class="text-gray-600">Share your goals, audience, and ideal features. No tech knowledge needed.</p>
         </div>
-        <div>
-          <h4 class="text-xl font-semibold">2. Get Your Plan</h4>
-          <p class="text-gray-600">We'll generate a proposal and timeline, plus AI-backed feature recommendations.</p>
+        <div class="text-center">
+          <div class="text-indigo-600 text-3xl mb-2">📦</div>
+          <h4 class="text-lg font-semibold mb-1">Step 2: We Build</h4>
+          <p class="text-gray-600">Our team develops a clean, functional app that fits your vision exactly.</p>
         </div>
-        <div>
-          <h4 class="text-xl font-semibold">3. Launch & Grow</h4>
-          <p class="text-gray-600">Your app is deployed live with support and upgrade options. You're in control.</p>
+        <div class="text-center">
+          <div class="text-indigo-600 text-3xl mb-2">🚀</div>
+          <h4 class="text-lg font-semibold mb-1">Step 3: You Launch</h4>
+          <p class="text-gray-600">You go live with a supported, scalable app and a smooth user experience.</p>
         </div>
       </div>
     </div>
@@ -92,10 +83,10 @@
     <div class="max-w-xl mx-auto px-6">
       <h2 class="text-3xl font-bold mb-8 text-center">Start Your Project</h2>
       <form method="POST" action="submit.php" class="bg-white p-6 rounded-lg shadow space-y-4">
-        <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 border border-gray-300 rounded-md">
-        <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-3 border border-gray-300 rounded-md">
-        <textarea name="description" rows="5" placeholder="Tell us about your idea..." required class="w-full px-4 py-3 border border-gray-300 rounded-md"></textarea>
-        <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-md font-semibold hover:bg-indigo-700">Send Request</button>
+        <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <textarea name="description" rows="5" placeholder="Tell us about your idea..." required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+        <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-md font-semibold hover:bg-indigo-700 transition">Send Request</button>
       </form>
     </div>
   </section>
