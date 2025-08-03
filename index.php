@@ -9,13 +9,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #3b82f6;
-      --primary-dark: #2563eb;
-      --primary-light: #93c5fd;
+      --primary: #294282;        /* Dark blue primary */
+      --primary-dark: #1d3261;   /* Darker blue */
+      --primary-light: #93a7e0;  /* Lighter blue */
+      --secondary: #656760;      /* Gray secondary */
+      --accent1: #a18d3e;       /* Muted gold */
+      --accent2: #deb31c;        /* Bright gold */
+      --white: #fcfcfc;          /* Off-white */
     }
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f9fafb;
+      background-color: var(--white);
       color: #111827;
     }
     .nav-link {
@@ -48,7 +52,7 @@
       align-items: center;
       justify-content: center;
       border-radius: 12px;
-      background-color: rgba(59, 130, 246, 0.1);
+      background-color: rgba(41, 66, 130, 0.1);
     }
     .process-step {
       position: relative;
@@ -85,8 +89,8 @@
       position: absolute;
       top: -12px;
       right: -12px;
-      background-color: #ef4444;
-      color: white;
+      background-color: var(--accent2);
+      color: var(--primary);
       font-weight: bold;
       padding: 4px 12px;
       border-radius: 9999px;
@@ -94,11 +98,14 @@
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     }
     .launch-banner {
-      background-color: #1e40af;
-      color: white;
+      background-color: var(--primary);
+      color: var(--white);
       text-align: center;
       padding: 12px;
       font-weight: 500;
+    }
+    .bg-primary-gradient {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     }
   </style>
 </head>
@@ -127,7 +134,7 @@
       <a href="#contact" class="nav-link text-gray-600 hover:text-gray-900">Contact</a>
     </nav>
     
-    <a href="#contact" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition-colors">
+    <a href="#contact" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-[#294282] hover:bg-[#1d3261] transition-colors">
       Get Started
     </a>
   </div>
@@ -138,13 +145,13 @@
     <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center">
       <div class="md:w-1/2 mb-12 md:mb-0 animate-on-scroll">
         <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-          Premium web apps <br><span class="text-blue-600">without the premium price</span>
+          Premium web apps <br><span class="text-[#294282]">without the premium price</span>
         </h1>
         <p class="text-xl text-gray-600 mb-8 max-w-lg">
           We're launching our web app development studio with exclusive discounts for our first clients. Be among the first to get a professionally built web application at a fraction of the cost.
         </p>
         <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-          <a href="#discounts" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition-colors">
+          <a href="#discounts" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-[#294282] hover:bg-[#1d3261] transition-colors">
             Claim Your Discount
           </a>
           <a href="#process" class="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md shadow-sm text-gray-700 bg-white hover:bg-gray-50 transition-colors">
@@ -154,7 +161,7 @@
       </div>
       <div class="md:w-1/2 animate-on-scroll">
         <div class="relative">
-          <div class="absolute -top-8 -left-8 w-64 h-64 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+          <div class="absolute -top-8 -left-8 w-64 h-64 bg-[#93a7e0] rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
           <div class="relative rounded-xl bg-white shadow-lg border border-gray-100 overflow-hidden">
             <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Dashboard preview" class="w-full h-auto">
           </div>
@@ -176,7 +183,7 @@
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm card-hover animate-on-scroll">
           <div class="feature-icon mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#294282]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
           </div>
@@ -188,7 +195,7 @@
         
         <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm card-hover animate-on-scroll">
           <div class="feature-icon mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#294282]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
             </svg>
           </div>
@@ -200,7 +207,7 @@
         
         <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm card-hover animate-on-scroll">
           <div class="feature-icon mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#294282]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
           </div>
@@ -212,7 +219,7 @@
         
         <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm card-hover animate-on-scroll">
           <div class="feature-icon mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#294282]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
           </div>
@@ -224,7 +231,7 @@
         
         <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm card-hover animate-on-scroll">
           <div class="feature-icon mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#294282]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
             </svg>
           </div>
@@ -236,7 +243,7 @@
         
         <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm card-hover animate-on-scroll">
           <div class="feature-icon mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#294282]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
           </div>
@@ -250,7 +257,7 @@
   </section>
 
   <!-- Launch Discounts -->
-  <section id="discounts" class="py-20 bg-gray-50">
+  <section id="discounts" class="py-20 bg-[#fcfcfc]">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center mb-16 animate-on-scroll">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Launch Discounts</h2>
@@ -260,7 +267,7 @@
       </div>
       
       <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        <div class="bg-white p-8 rounded-xl border-2 border-blue-500 shadow-lg relative animate-on-scroll">
+        <div class="bg-white p-8 rounded-xl border-2 border-[#294282] shadow-lg relative animate-on-scroll">
           <div class="discount-badge">50% OFF</div>
           <h3 class="text-xl font-bold mb-2 text-center">First Client</h3>
           <p class="text-gray-600 text-center mb-6">Exclusive founding client offer</p>
@@ -270,25 +277,25 @@
           </div>
           <ul class="space-y-3 mb-8">
             <li class="flex items-start">
-              <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="h-5 w-5 text-[#294282] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
               </svg>
               <span>All standard features included</span>
             </li>
             <li class="flex items-start">
-              <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="h-5 w-5 text-[#294282] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
               </svg>
               <span>Priority scheduling</span>
             </li>
             <li class="flex items-start">
-              <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="h-5 w-5 text-[#294282] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
               </svg>
               <span>Featured case study</span>
             </li>
           </ul>
-          <a href="#contact" class="block w-full bg-blue-600 text-white text-center py-3 rounded-md font-semibold hover:bg-blue-700 transition">
+          <a href="#contact" class="block w-full bg-[#294282] text-white text-center py-3 rounded-md font-semibold hover:bg-[#1d3261] transition">
             Claim This Offer
           </a>
           <p class="text-xs text-gray-500 text-center mt-2">1 available at this price</p>
@@ -304,25 +311,25 @@
           </div>
           <ul class="space-y-3 mb-8">
             <li class="flex items-start">
-              <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="h-5 w-5 text-[#294282] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
               </svg>
               <span>All standard features included</span>
             </li>
             <li class="flex items-start">
-              <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="h-5 w-5 text-[#294282] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
               </svg>
               <span>Priority support</span>
             </li>
             <li class="flex items-start">
-              <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="h-5 w-5 text-[#294282] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
               </svg>
               <span>Optional case study feature</span>
             </li>
           </ul>
-          <a href="#contact" class="block w-full bg-blue-600 text-white text-center py-3 rounded-md font-semibold hover:bg-blue-700 transition">
+          <a href="#contact" class="block w-full bg-[#294282] text-white text-center py-3 rounded-md font-semibold hover:bg-[#1d3261] transition">
             Claim This Offer
           </a>
           <p class="text-xs text-gray-500 text-center mt-2">1 available at this price</p>
@@ -338,25 +345,25 @@
           </div>
           <ul class="space-y-3 mb-8">
             <li class="flex items-start">
-              <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="h-5 w-5 text-[#294282] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
               </svg>
               <span>All standard features included</span>
             </li>
             <li class="flex items-start">
-              <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="h-5 w-5 text-[#294282] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
               </svg>
               <span>Standard support</span>
             </li>
             <li class="flex items-start">
-              <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="h-5 w-5 text-[#294282] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
               </svg>
               <span>Potential feature in portfolio</span>
             </li>
           </ul>
-          <a href="#contact" class="block w-full bg-blue-600 text-white text-center py-3 rounded-md font-semibold hover:bg-blue-700 transition">
+          <a href="#contact" class="block w-full bg-[#294282] text-white text-center py-3 rounded-md font-semibold hover:bg-[#1d3261] transition">
             Claim This Offer
           </a>
           <p class="text-xs text-gray-500 text-center mt-2">1 available at this price</p>
@@ -405,13 +412,13 @@
   </section>
 
   <!-- CTA -->
-  <section id="contact" class="py-20 bg-gray-900 text-white">
+  <section id="contact" class="py-20 bg-[#294282] text-white">
     <div class="max-w-4xl mx-auto px-6 text-center animate-on-scroll">
       <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to build your web app?</h2>
-      <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+      <p class="text-xl text-[#93a7e0] mb-8 max-w-2xl mx-auto">
         Contact us now to claim one of our limited launch discounts before they're gone.
       </p>
-      <a href="#contact" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-blue-700 bg-white hover:bg-gray-100 transition-colors">
+      <a href="#contact" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-[#294282] bg-[#deb31c] hover:bg-[#a18d3e] transition-colors">
         Contact Us
       </a>
     </div>
@@ -425,18 +432,18 @@
         <form class="space-y-6">
           <div>
             <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
-            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#294282] focus:border-[#294282]">
           </div>
           <div>
             <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#294282] focus:border-[#294282]">
           </div>
           <div>
             <label for="project" class="block text-sm font-medium text-gray-700 mb-1">Tell us about your project</label>
-            <textarea id="project" name="project" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+            <textarea id="project" name="project" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#294282] focus:border-[#294282]"></textarea>
           </div>
           <div>
-            <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-md font-semibold hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+            <button type="submit" class="w-full bg-[#294282] text-white py-3 px-6 rounded-md font-semibold hover:bg-[#1d3261] transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#294282]">
               Send Message
             </button>
           </div>
@@ -450,7 +457,7 @@
     <div class="max-w-7xl mx-auto px-6">
       <div class="flex flex-col md:flex-row justify-between items-center">
         <div class="flex items-center mb-6 md:mb-0">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#294282]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z" />
           </svg>
           <span class="ml-2 text-xl font-semibold">Movana</span>
