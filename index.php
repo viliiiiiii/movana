@@ -109,18 +109,26 @@
   </div>
 
   <!-- Navigation -->
-  <!-- Navigation -->
 <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-gray-200">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
     <div class="flex items-center">
-      <img src="/assets/logo.png" alt="Movana" style="width: 50px; height: 20px;"> 
+      <!-- Optimized Logo -->
+      <img 
+        src="/assets/logo.png" 
+        alt="Movana" 
+        class="h-8 w-auto"  <!-- Height fixed at 32px (h-8), width auto maintains aspect ratio -->
+        style="max-width: 150px"  <!-- Optional: prevents excessive width -->
+      >
+      <span class="ml-3 text-xl font-semibold">Movana</span>
     </div>
+    
     <nav class="hidden md:flex space-x-8">
       <a href="#features" class="nav-link text-gray-600 hover:text-gray-900">Features</a>
       <a href="#process" class="nav-link text-gray-600 hover:text-gray-900">Process</a>
       <a href="#discounts" class="nav-link text-gray-600 hover:text-gray-900">Launch Discounts</a>
       <a href="#contact" class="nav-link text-gray-600 hover:text-gray-900">Contact</a>
     </nav>
+    
     <a href="#contact" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition-colors">
       Get Started
     </a>
