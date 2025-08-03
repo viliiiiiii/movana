@@ -14,7 +14,7 @@
     }
     
     .gradient-bg {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #0ea5e9 75%, #3b82f6 100%);
       background-size: 400% 400%;
       animation: gradientShift 15s ease infinite;
     }
@@ -43,7 +43,7 @@
     .floating-orb {
       position: absolute;
       border-radius: 50%;
-      background: linear-gradient(45deg, rgba(167, 139, 250, 0.3), rgba(59, 130, 246, 0.3));
+      background: linear-gradient(45deg, rgba(59, 130, 246, 0.4), rgba(14, 165, 233, 0.4));
       filter: blur(40px);
       animation: float 6s ease-in-out infinite;
     }
@@ -112,14 +112,14 @@
     
     .glow-button {
       position: relative;
-      background: linear-gradient(45deg, #667eea, #764ba2);
-      box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+      background: linear-gradient(45deg, #3b82f6, #1d4ed8);
+      box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
       transition: all 0.3s ease;
     }
     
     .glow-button:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6);
+      box-shadow: 0 8px 30px rgba(59, 130, 246, 0.6);
     }
     
     .feature-card {
@@ -162,13 +162,13 @@
     
     .input-field:focus {
       background: rgba(255, 255, 255, 0.95);
-      border-color: #667eea;
+      border-color: #3b82f6;
       transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2);
+      box-shadow: 0 8px 20px rgba(59, 130, 246, 0.2);
     }
     
     .text-gradient {
-      background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8, #0ea5e9);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -176,7 +176,7 @@
     
     .pulse-ring {
       position: absolute;
-      border: 2px solid rgba(102, 126, 234, 0.3);
+      border: 2px solid rgba(59, 130, 246, 0.3);
       border-radius: 50%;
       animation: pulse 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
     }
@@ -204,9 +204,9 @@
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <h1 class="text-3xl font-black text-gradient">Movana</h1>
       <nav class="hidden md:flex space-x-8 text-sm font-semibold">
-        <a href="#features" class="text-gray-700 hover:text-purple-600 transition-all duration-300 hover:scale-105">Features</a>
-        <a href="#how" class="text-gray-700 hover:text-purple-600 transition-all duration-300 hover:scale-105">Process</a>
-        <a href="#contact" class="text-gray-700 hover:text-purple-600 transition-all duration-300 hover:scale-105">Contact</a>
+        <a href="#features" class="text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105">Features</a>
+        <a href="#how" class="text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105">Process</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105">Contact</a>
       </nav>
       <a href="#contact" class="glow-button text-white px-6 py-3 rounded-full text-sm font-bold transition-all duration-300">Start Building</a>
     </div>
@@ -246,7 +246,7 @@
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div class="feature-card p-8 rounded-3xl slide-in-left" style="animation-delay: 0.1s">
-          <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl mb-6 flex items-center justify-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl mb-6 flex items-center justify-center">
             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
             </svg>
@@ -256,7 +256,7 @@
         </div>
         
         <div class="feature-card p-8 rounded-3xl slide-in-left" style="animation-delay: 0.2s">
-          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl mb-6 flex items-center justify-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-sky-500 to-sky-600 rounded-2xl mb-6 flex items-center justify-center">
             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
             </svg>
@@ -266,7 +266,7 @@
         </div>
         
         <div class="feature-card p-8 rounded-3xl slide-in-right" style="animation-delay: 0.3s">
-          <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl mb-6 flex items-center justify-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl mb-6 flex items-center justify-center">
             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
             </svg>
@@ -276,7 +276,7 @@
         </div>
         
         <div class="feature-card p-8 rounded-3xl slide-in-right" style="animation-delay: 0.4s">
-          <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl mb-6 flex items-center justify-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-2xl mb-6 flex items-center justify-center">
             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
             </svg>
@@ -298,19 +298,19 @@
       
       <div class="grid md:grid-cols-3 gap-12">
         <div class="process-step text-center p-10 rounded-3xl fade-up" style="animation-delay: 0.1s">
-          <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mx-auto mb-8 flex items-center justify-center text-white text-3xl font-black">1</div>
+          <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full mx-auto mb-8 flex items-center justify-center text-white text-3xl font-black">1</div>
           <h4 class="text-2xl font-bold text-gray-800 mb-4">Discover & Design</h4>
           <p class="text-gray-600 leading-relaxed">We dive deep into your vision, create wireframes, and design a user experience that converts visitors into customers.</p>
         </div>
         
         <div class="process-step text-center p-10 rounded-3xl fade-up" style="animation-delay: 0.2s">
-          <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full mx-auto mb-8 flex items-center justify-center text-white text-3xl font-black">2</div>
+          <div class="w-20 h-20 bg-gradient-to-br from-sky-500 to-sky-700 rounded-full mx-auto mb-8 flex items-center justify-center text-white text-3xl font-black">2</div>
           <h4 class="text-2xl font-bold text-gray-800 mb-4">Develop & Test</h4>
           <p class="text-gray-600 leading-relaxed">Our expert developers bring your app to life using cutting-edge technologies, with rigorous testing at every stage.</p>
         </div>
         
         <div class="process-step text-center p-10 rounded-3xl fade-up" style="animation-delay: 0.3s">
-          <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full mx-auto mb-8 flex items-center justify-center text-white text-3xl font-black">3</div>
+          <div class="w-20 h-20 bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-full mx-auto mb-8 flex items-center justify-center text-white text-3xl font-black">3</div>
           <h4 class="text-2xl font-bold text-gray-800 mb-4">Launch & Support</h4>
           <p class="text-gray-600 leading-relaxed">Go live with confidence on your custom domain, backed by 24/7 monitoring and ongoing support.</p>
         </div>
