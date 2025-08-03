@@ -12,3 +12,5 @@ RUN a2enmod rewrite
 
 # Expose port 80 (default)
 EXPOSE 80
+
+CMD ["apache2-foreground"]
