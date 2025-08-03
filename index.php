@@ -113,8 +113,7 @@
 <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-gray-200">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
     <div class="flex items-center">
-      <img src="/assets/logo.png" alt="Movana" class="h-8 w-8"> 
-      <span class="ml-2 text-xl font-semibold">Movana</span>
+      <img src="/assets/logo.png" alt="Movana"> 
     </div>
     <nav class="hidden md:flex space-x-8">
       <a href="#features" class="nav-link text-gray-600 hover:text-gray-900">Features</a>
