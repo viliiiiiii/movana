@@ -116,11 +116,9 @@
       <img 
         src="/assets/logo.png" 
         alt="Movana" 
-        class="h-8 w-auto"  <!-- Height fixed at 32px (h-8), width auto maintains aspect ratio -->
-        style="max-width: 150px"  <!-- Optional: prevents excessive width -->
-      >
-      <span class="ml-3 text-xl font-semibold">Movana</span>
-    </div>
+        class="h-8 w-auto"
+        style="max-width: 150px"
+      ></div>
     
     <nav class="hidden md:flex space-x-8">
       <a href="#features" class="nav-link text-gray-600 hover:text-gray-900">Features</a>
