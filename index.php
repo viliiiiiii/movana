@@ -3,20 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movana | Smart Web App Builder by Elvir</title>
+  <title>Movana | Smart Web App Builder</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Inter', sans-serif; }
+    .logo-icon path {
+      fill: none;
+      stroke: #4f46e5;
+      stroke-width: 2;
+    }
   </style>
 </head>
 <body class="bg-white text-gray-800">
   <!-- Navigation -->
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-indigo-600">Movana</h1>
+      <div class="flex items-center space-x-2">
+        <svg class="w-8 h-8 logo-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 8l20 10 10-4 12 8 18-2-14 10-10 4-4 10-12-2-4-8z" />
+        </svg>
+        <h1 class="text-2xl font-bold text-indigo-600">Movana</h1>
+      </div>
       <nav class="hidden md:flex space-x-6 text-sm font-medium">
         <a href="#features" class="hover:text-indigo-600">Features</a>
         <a href="#how" class="hover:text-indigo-600">How It Works</a>
