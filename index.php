@@ -429,25 +429,23 @@
     <div class="max-w-2xl mx-auto px-6 animate-on-scroll">
       <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
         <h3 class="text-2xl font-bold mb-6 text-center">Get in Touch</h3>
-        <form class="space-y-6">
-          <div>
-            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
-            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#294282] focus:border-[#294282]">
-          </div>
-          <div>
-            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#294282] focus:border-[#294282]">
-          </div>
-          <div>
-            <label for="project" class="block text-sm font-medium text-gray-700 mb-1">Tell us about your project</label>
-            <textarea id="project" name="project" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#294282] focus:border-[#294282]"></textarea>
-          </div>
-          <div>
-            <button type="submit" class="w-full bg-[#294282] text-white py-3 px-6 rounded-md font-semibold hover:bg-[#1d3261] transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#294282]">
-              Send Message
-            </button>
-          </div>
-        </form>
+        <form action="https://formsubmit.co/elvirisljamovic@gmail.com" method="POST" class="bg-gray-50 p-6 rounded-xl shadow-lg space-y-5">
+  <!-- Anti-bot honeypot -->
+  <input type="text" name="_honey" style="display:none">
+
+  <!-- Disable CAPTCHA -->
+  <input type="hidden" name="_captcha" value="false">
+
+ <input type="hidden" name="_next" value="https://movana.me/thank-you.html">
+
+  <!-- Real form fields -->
+  <input type="text" name="name" placeholder="Name" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500">
+  <input type="email" name="email" placeholder="Email" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500">
+  <textarea name="message" rows="5" placeholder="What are you building?" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500"></textarea>
+  
+  <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-md font-semibold hover:bg-indigo-700 transition">Submit</button>
+</form>
+
       </div>
     </div>
   </section>
