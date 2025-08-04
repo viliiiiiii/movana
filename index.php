@@ -436,7 +436,7 @@
   <!-- Disable CAPTCHA -->
   <input type="hidden" name="_captcha" value="false">
 
- <input type="hidden" name="_next" value="https://movana.me/thank-you.html">
+ <input type="hidden" name="https://movana.me/thank-you.html" value="https://movana.me/thank-you.html">
 
   <!-- Real form fields -->
   <input type="text" name="name" placeholder="Name" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500">
